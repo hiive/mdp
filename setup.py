@@ -22,7 +22,6 @@ here = path.abspath(path.dirname(__file__))
 # NOTE: this trick is being used by the gym: I might be cargo-culting here.
 # Don't import mdp here since deps might not have been installed yet
 sys.path.insert(0, path.join(here, 'blackhc/mdp'))
-from version import VERSION
 
 
 # Get the long description from the README file
@@ -35,13 +34,13 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version=VERSION,
+    version='1.0.3_hiive',
 
     description='MDP framework for the OpenAI Gym',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/blackhc/mdp',
+    url='https://github.com/hiive/mdp',
 
     # Author details
     author='Andreas Kirsch',
