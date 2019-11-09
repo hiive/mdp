@@ -17,7 +17,6 @@ from hiive import mdp
 from hiive.mdp.dsl import context as dsl_context
 from hiive.mdp.dsl import ast
 
-
 # noinspection PyShadowingBuiltins
 SyntaxError = ast.DslSyntaxError
 
