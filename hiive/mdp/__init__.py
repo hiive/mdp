@@ -1,4 +1,4 @@
-# Copyright 2017 Andreas Kirsch <blackhc@gmail.com>
+# Copyright 2017 Andreas Kirsch <hiive@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ import gym.spaces
 import networkx as nx
 import numpy as np
 
-from blackhc.mdp.version import VERSION as __version__
+from hiive.mdp.version import VERSION as __version__
 
 
 class State(object):

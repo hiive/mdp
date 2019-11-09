@@ -1,4 +1,4 @@
-# Copyright 2017 Andreas Kirsch <blackhc@gmail.com>
+# Copyright 2017 Andreas Kirsch <hiive@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +13,9 @@
 # limitations under the License.
 import contextlib
 
-from blackhc import mdp
-from blackhc.mdp.dsl import context as dsl_context
-from blackhc.mdp.dsl import ast
+from hiive import mdp
+from hiive.mdp.dsl import context as dsl_context
+from hiive.mdp.dsl import ast
 
 
 # noinspection PyShadowingBuiltins

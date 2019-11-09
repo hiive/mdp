@@ -1,5 +1,5 @@
-from blackhc.mdp import dsl
-# Copyright 2017 Andreas Kirsch <blackhc@gmail.com>
+from hiive.mdp import dsl
+# Copyright 2017 Andreas Kirsch <hiive@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@ from blackhc.mdp import dsl
 # limitations under the License.
 import numpy as np
 import pytest
-from blackhc.mdp import lp
-from blackhc.mdp import dsl
+from hiive.mdp import lp
+from hiive.mdp import dsl
 
 
 # noinspection PyStatementEffect

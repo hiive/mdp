@@ -1,4 +1,4 @@
-# Copyright 2017 Andreas Kirsch <blackhc@gmail.com>
+# Copyright 2017 Andreas Kirsch <hiive@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ This is a very basic solver.
 
 import numpy as np
 
-from blackhc import mdp
+from hiive import mdp
 
 
 class LinearProgramming(object):

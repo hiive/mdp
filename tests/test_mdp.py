@@ -1,4 +1,4 @@
-# Copyright 2017 Andreas Kirsch <blackhc@gmail.com>
+# Copyright 2017 Andreas Kirsch <hiive@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,8 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from blackhc import mdp
-from blackhc.mdp import dsl
+from hiive import mdp
+from hiive.mdp import dsl
 
 
 # noinspection PyStatementEffect

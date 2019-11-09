@@ -1,4 +1,4 @@
-# Copyright 2017 Andreas Kirsch <blackhc@gmail.com>
+# Copyright 2017 Andreas Kirsch <hiive@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,39 +12,41 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # Always prefer setuptools over distutils
+import sys
+from os import path
 from setuptools import setup, find_packages
 # To use a consistent encoding
 from codecs import open
-from os import path
-import sys
+
+from .hiive.mdp.version import VERSION
+
 
 here = path.abspath(path.dirname(__file__))
 # NOTE: this trick is being used by the gym: I might be cargo-culting here.
 # Don't import mdp here since deps might not have been installed yet
-sys.path.insert(0, path.join(here, 'blackhc/mdp'))
-
+sys.path.insert(0, path.join(here, 'hiive/mdp'))
 
 # Get the long description from the README file
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='blackhc.mdp',
+    name='hiive.mdp',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0.3_hiive',
+    version=VERSION,
 
-    description='MDP framework for the OpenAI Gym',
+    description='MDP framework for the OpenAI Gym (adapted from blackhc.mdp',
     long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com/hiive/mdp',
 
     # Author details
-    author='Andreas Kirsch',
-    author_email='blackhc+mdp@gmail.com',
+    author='Andrew Rollings (originally Andreas Kirsch)',
+    author_email='a.rollings@hiive.com',
 
     # Choose your license
     license='Apache',
@@ -75,13 +77,14 @@ setup(
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=['blackhc.mdp', 'blackhc.mdp.dsl'],
+    packages=['hiive.mdp', 'hiive.mdp.dsl'],
 
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['gym>=0.9.2', 'numpy', 'matplotlib', 'networkx>=1.11.0,<2.0.0', 'pydotplus', 'ipython>=6.1.0', 'ipywidgets', 'typing'],
+    install_requires=['gym>=0.9.2', 'numpy', 'matplotlib', 'networkx>=1.11.0,<2.0.0', 'pydotplus', 'ipython>=6.1.0',
+                      'ipywidgets', 'typing'],
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
