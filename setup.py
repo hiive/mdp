@@ -84,7 +84,7 @@ setup(
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=['gym>=0.9.2', 'numpy', 'matplotlib', 'networkx>=1.11.0,<2.0.0', 'pydotplus', 'ipython>=6.1.0',
-                      'ipywidgets', 'typing'],
+                      'ipywidgets', 'typing', 'gym'],
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
