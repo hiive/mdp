@@ -1,1 +1,1 @@
-from hiive.mdp.version import VERSION
+from .version import VERSION

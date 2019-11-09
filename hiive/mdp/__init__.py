@@ -19,7 +19,7 @@ import gym.spaces
 import networkx as nx
 import numpy as np
 
-from hiive.mdp.version import VERSION as __version__
+from hiive.version import VERSION as __version__
 
 
 class State(object):
