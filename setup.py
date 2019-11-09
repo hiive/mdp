@@ -18,7 +18,7 @@ from setuptools import setup, find_packages
 # To use a consistent encoding
 from codecs import open
 
-from .hiive.mdp.version import VERSION
+from version import VERSION
 
 
 here = path.abspath(path.dirname(__file__))
